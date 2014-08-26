@@ -52,6 +52,14 @@ describe "Static pages" do
 		end
 	end
 
+	describe "Contect page" do 
+
+		it "should have the right title" do
+			visit '/static_pages/contect'
+			expect(page).to have_title("Ruby on Rails Tutorial Sample App | Contect")
+		end
+	end
+
 	
 end
 
